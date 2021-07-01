@@ -1,0 +1,12 @@
+{
+  "name": "jbank",
+  "version": "1.0.0",
+  "description": "Projeto do jbank a sua contas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC", 
+  "type": "module"
+}
