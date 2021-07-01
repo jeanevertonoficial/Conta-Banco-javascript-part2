@@ -1,4 +1,5 @@
 import { Cliente } from "./Cliente.js"; // importando classes
+import { Conta } from "./Conta.js";
 import { ContaCorrente } from "./ContaCorrente.js";
 import { ContaPoupanca } from "./ContaPoupanca.js";
 
@@ -9,7 +10,6 @@ const cliente1 = new Cliente("Jean", 12345678910);
 const conta1 = new ContaCorrente(1001, cliente1); // agencia , id cliente
 //const conta2 = new ContaCorrente(1002, cliente2); // agencia , id cliente
 //const conta3 = new ContaCorrente(1003, cliente3); // agencia , id cliente
-
 
 
 conta1.depositar(500);
@@ -29,8 +29,11 @@ const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
 conta1.sacar(100);
 contaPoupanca.sacar(10);
 
-console.log(conta1);
-console.log(contaPoupanca);
+//const conta = new Conta(450, cliente1, 10001);
+
+
+//console.log(conta);
+
 // const cliente3 = new Cliente();
 // cliente3.nome = "Everton";
 // cliente3.cpf = 12345678913;

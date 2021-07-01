@@ -3,6 +3,10 @@ export class Conta {
     this._saldo = saldoInicial;
     this._cliente = cliente;
     this._agencia = agencia;
+      //contructor de comparação 
+    if (this.constructor == Conta) {
+      console.log("Não pode Fazer este operação por aqui, não deve instânciar um objeto do tipo conta!!");
+    }
   }
 
   set cliente(novoValor) {
