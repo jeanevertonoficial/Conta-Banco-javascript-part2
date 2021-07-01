@@ -1,12 +1,16 @@
+// Classe abstrata, classe que não pode ser instânciada
 export class Conta {
   constructor(saldoInicial, cliente, agencia) {
+    //contructor de comparação
+    if (this.constructor == Conta) {
+      throw new Error(
+        "Não deve instânciar um objeto do tipo conta diretamente, pois essa é uma classe abstrata!!"
+      );
+
+    }
     this._saldo = saldoInicial;
     this._cliente = cliente;
     this._agencia = agencia;
-      //contructor de comparação 
-    if (this.constructor == Conta) {
-      console.log("Não pode Fazer este operação por aqui, não deve instânciar um objeto do tipo conta!!");
-    }
   }
 
   set cliente(novoValor) {
@@ -23,10 +27,10 @@ export class Conta {
   get saldo() {
     return this._saldo;
   }
-  // function de sacar
+  
+  // Metodo abstrato
   sacar(valor) {
-    let taxa = 1
-    return this._sacar(valor, taxa); // vai retornar do _sacar privado
+    throw new Error("O método sacar da canta é abstrado");
   }
 
   //metodo privado 

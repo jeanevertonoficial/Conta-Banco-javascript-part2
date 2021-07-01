@@ -1,7 +1,7 @@
 import { Cliente } from "./Cliente.js"; // importando classes
-import { Conta } from "./Conta.js";
 import { ContaCorrente } from "./ContaCorrente.js";
 import { ContaPoupanca } from "./ContaPoupanca.js";
+import { ContaSalario } from "./ContaSalario.js";
 
 const cliente1 = new Cliente("Jean", 12345678910);
 //const cliente2 = new Cliente("Alice", 112345848); // nome , cpf
@@ -24,15 +24,18 @@ conta1.depositar(500);
 //console.log(`Contas: ${ContaCorrente.numeroDeContas}`); // metodo contador
 
 const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
+const contaSalario = new ContaSalario(cliente1);
+contaSalario.depositar(500);
+contaSalario._sacar(15);
+
+console.log(contaSalario);
 
 
-conta1.sacar(100);
-contaPoupanca.sacar(10);
-
-//const conta = new Conta(450, cliente1, 10001);
+//conta1.sacar(100);
+//contaPoupanca.sacar(10);
 
 
-//console.log(conta);
+//console.log(conta1);
 
 // const cliente3 = new Cliente();
 // cliente3.nome = "Everton";
