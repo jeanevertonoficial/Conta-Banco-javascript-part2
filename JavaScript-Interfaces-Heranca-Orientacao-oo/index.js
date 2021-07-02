@@ -31,12 +31,20 @@ conta1.depositar(500);
 //console.log(`nome do cliente: ${cliente3.nome} \nCpf:${cliente3.cpf}\n `);
 //console.log(`Contas: ${ContaCorrente.numeroDeContas}`); // metodo contador
 
-const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
+const contaPoupanca = new ContaPoupanca(50, cliente1, 1001, 124541541);
 const contaSalario = new ContaSalario(cliente1);
+
+ 
+console.log(`\n*********** BANCO JEANBANK ***********\n              bem-vindo \nsaldo: ${contaPoupanca.saldo}\nCPF: ${cliente1.cpf}\n`);
+
 contaSalario.depositar(500);
+contaPoupanca.depositar(255);
+
 contaSalario.sacar(15);
 
-console.log(contaSalario);
+
+console.log(`Deposito realizado`);
+console.log(`Seu novo SALDO é de ${contaPoupanca.saldo}`);
 
 //const conta = new Conta(cliente1); // se chamar Conta direto vai aparece uma mensagem de erro pos conta não pode ser puxada direto de uma classe abstrata
 
