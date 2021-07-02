@@ -2,7 +2,9 @@
 export class Conta {
   constructor(saldoInicial, cliente, agencia) {
     //contructor de comparação, não deixa instânciar nenhuma conta direto da classe conta.
+   
     if (this.constructor == Conta) {
+       console.log(this.constructor);
       throw new Error(
         "Não deve instânciar um objeto do tipo conta diretamente, pois essa é uma classe abstrata!!"
       );

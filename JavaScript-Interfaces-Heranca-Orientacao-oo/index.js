@@ -1,4 +1,5 @@
 import { Cliente } from "./Conta/Cliente.js"; // importando classes
+//import { Conta } from "./Conta/Conta.js";
 import { ContaCorrente } from "./Conta/ContaCorrente.js";
 import { ContaPoupanca } from "./Conta/ContaPoupanca.js";
 import { ContaSalario } from "./Conta/ContaSalario.js";
@@ -10,6 +11,13 @@ const cliente1 = new Cliente("Jean", 12345678910);
 const conta1 = new ContaCorrente(1001, cliente1); // agencia , id cliente
 //const conta2 = new ContaCorrente(1002, cliente2); // agencia , id cliente
 //const conta3 = new ContaCorrente(1003, cliente3); // agencia , id cliente
+
+
+
+/* TESTE DE CHAMADA DA CLASSE ABSTRATA 
+const conta = new Conta(1001, cliente1);
+console.log(conta); */
+
 
 
 conta1.depositar(500);
