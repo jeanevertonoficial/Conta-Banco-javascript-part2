@@ -1,7 +1,7 @@
 // Classe abstrata, classe que não pode ser instânciada
 export class Conta {
   constructor(saldoInicial, cliente, agencia) {
-    //contructor de comparação
+    //contructor de comparação, não deixa instânciar nenhuma conta direto da classe conta.
     if (this.constructor == Conta) {
       throw new Error(
         "Não deve instânciar um objeto do tipo conta diretamente, pois essa é uma classe abstrata!!"

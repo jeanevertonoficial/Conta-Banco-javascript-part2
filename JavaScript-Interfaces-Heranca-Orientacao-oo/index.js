@@ -1,8 +1,7 @@
 import { Cliente } from "./Conta/Cliente.js"; // importando classes
-//import { Conta } from "./Conta.js";
 import { ContaCorrente } from "./Conta/ContaCorrente.js";
 import { ContaPoupanca } from "./Conta/ContaPoupanca.js";
-import { ContaSalario } from "./Conta/ContaSalario";
+import { ContaSalario } from "./Conta/ContaSalario.js";
 
 const cliente1 = new Cliente("Jean", 12345678910);
 //const cliente2 = new Cliente("Alice", 112345848); // nome , cpf
