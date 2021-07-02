@@ -9,14 +9,10 @@ export class Cliente {
     this.nome = nome;
     this._cpf = cpf;
     this._senha = senha;
+   // this.autenticar = 1; //colocando uma chave para autentificação da senha
   }
   //se o cliente tive senha "é obrigatorio"
-  autenticar(senha) {
-    if (senha === this._senha) {
-      return senha;
-    } else {
-      console.log("Senha invalida, tente novamente.");
-      //throw new Error("Senha invalida!");
-    }
+  autenticar() {
+    return true;
   }
 }
