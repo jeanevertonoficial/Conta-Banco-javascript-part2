@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "9-loops",
+            "skipFiles": [
+                "<node_internals>/**" // coisas internas do debbguer
+            ],
+            "program": "${workspaceFolder}\\JavaScript-primeiros-passos\\9-loops.js"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "8-condicionais",
+            "skipFiles": [
+                "<node_internals>/**" // coisas internas do debbguer
+            ],
+            "program": "${workspaceFolder}\\JavaScript-primeiros-passos\\8-condicionais.js"
+        }
+    ]
+}

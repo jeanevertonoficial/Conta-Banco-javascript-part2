@@ -1,7 +1,8 @@
-import { Cliente } from "./Cliente.js"; // importando classes
-import { ContaCorrente } from "./ContaCorrente.js";
-import { ContaPoupanca } from "./ContaPoupanca.js";
-import { ContaSalario } from "./ContaSalario.js";
+import { Cliente } from "./Conta/Cliente.js"; // importando classes
+//import { Conta } from "./Conta.js";
+import { ContaCorrente } from "./Conta/ContaCorrente.js";
+import { ContaPoupanca } from "./Conta/ContaPoupanca.js";
+import { ContaSalario } from "./Conta/ContaSalario";
 
 const cliente1 = new Cliente("Jean", 12345678910);
 //const cliente2 = new Cliente("Alice", 112345848); // nome , cpf
@@ -26,10 +27,13 @@ conta1.depositar(500);
 const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
 const contaSalario = new ContaSalario(cliente1);
 contaSalario.depositar(500);
-contaSalario._sacar(15);
+contaSalario.sacar(15);
 
 console.log(contaSalario);
 
+//const conta = new Conta(cliente1); // se chamar Conta direto vai aparece uma mensagem de erro pos conta não pode ser puxada direto de uma classe abstrata
+
+//console.log(conta);
 
 //conta1.sacar(100);
 //contaPoupanca.sacar(10);
